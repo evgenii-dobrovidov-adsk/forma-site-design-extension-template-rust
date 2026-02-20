@@ -1,0 +1,11 @@
+[package]
+name = "{{ crate_name }}"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+forma-embedded-view-sdk = { git = "https://github.com/evgenii-dobrovidov-adsk/forma-embedded-view-sdk-bindings-rust", branch = "main" }
+forma-ui-lib-wasm = { git = "https://github.com/evgenii-dobrovidov-adsk/forma-embedded-view-sdk-bindings-ui" }
